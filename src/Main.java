@@ -1,6 +1,15 @@
 import java.util.Scanner;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main {
+    public static double getLiveRate(String currency) {
+        if (currency.equals("USD")) return 50.0;
+        if (currency.equals("EUR")) return 55.0;
+        return 1.0;
+    }
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
